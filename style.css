@@ -5,7 +5,9 @@ body{
     justify-content: center;
     align-items:center;
     height:100vh;
-    background-color:hsl(0, 0%, 0%)
+    background-color:hsl(0, 0%, 0%);
+    flex-direction:column;
+
 }
 
 #pineapple{
@@ -15,14 +17,20 @@ body{
     max-width:500px;
     overflow:hidden;
 }
+#pineapplelogo{
+    text-align:right;
+    max-width: 100px; 
+    height:auto;
+}
 #display{
-    width:100%;
-    padding:20px;
+    width:93.8%;
+    padding:0;
     font-size:5rem;
-    text-align: left;
+    text-align: right;
     border:none;
     background-color:hsl(0, 0%, 0%); 
     color:white;
+    padding-right:10px;
 }
 #keys{
     display:grid;
@@ -39,11 +47,13 @@ button{
     background-color:#505050;
     color:white;
     font-size:3rem;
-    font-weight:;
+    font-weight:thin;
     cursor:pointer;
+    transition: transform 0.2 ease;
 }
 button:hover{
     background-color:hsl(0%,0%,40%);
+    transform: scale(1.1);
 }
 button:active{
     background-color:hsl(0%,0%,50%);
