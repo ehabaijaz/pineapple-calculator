@@ -67,3 +67,27 @@ button:active{
 .operator:active{
     background-color:hsl(35,100%,75%);
 }
+@media (max-width: 768px) {
+    #pineapple {
+        max-width: 100%; 
+    }
+
+    #display {
+        font-size: 2rem; 
+    }
+
+    button {
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 1rem; 
+    }
+
+    #display {
+        font-size: 1.5rem; 
+        padding: 5px;
+    }
+}
